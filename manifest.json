@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "ESPN Unspoiled",
   "version": "1.0",
-  "description": "Hide scores and winners on ESPN scoreboard",
+  "description": "Hide scores and winners on the ESPN scoreboard",
   "browser_action": {
     "default_icon": {
       "128": "e.png"
