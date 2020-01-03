@@ -1,0 +1,11 @@
+{
+  "manifest_version": 2,
+  "name": "ESPN Unspoiled",
+  "version": "1.0",
+  "description": "Hide scores and winners on ESPN scoreboard",
+
+  "content_scripts": [{
+    "js": ["main.js"],
+    "matches": ["https://www.espn.com/soccer/scoreboard/*"]
+  }]
+}
