@@ -7,6 +7,7 @@ function modifyHtml() {
   removeElementsByClassName("score")
   removeElementsByClassName("players")
   removeElementsByClassName("aggregate")
+  removeElementsByClassName("sponsored-headlines")
   removeElementById("global-scoreboard")
   removeElementById("now-feed")
 }
