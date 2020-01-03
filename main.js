@@ -6,6 +6,7 @@ function modifyHtml() {
   removeClass("tied")
   removeElementsByClassName("score")
   removeElementsByClassName("players")
+  removeElementsByClassName("aggregate")
   removeElementById("global-scoreboard")
   removeElementById("now-feed")
 }
@@ -27,5 +28,8 @@ function removeElementsByClassName(className) {
 }
 
 function removeElementById(idName) {
-  document.getElementById(idName).remove()
+  const element = document.getElementById(idName)
+  if (!!element) {
+    element.remove()
+  }
 }
