@@ -1,28 +1,31 @@
-setTimeout(function () {
-  console.log("running unspoiled 2")
+setInterval(modifyHtml, 200)
+
+function modifyHtml() {
   removeClass("team-a-winner")
   removeClass("team-b-winner")
   removeClass("tied")
   removeElementsByClassName("score")
   removeElementsByClassName("players")
-}, 1000)
+  removeElementById("global-scoreboard")
+  removeElementById("now-feed")
+}
 
 function removeClass(className) {
   const elements = document.getElementsByClassName(className)
-  let element
-  let index
-  for (index = 0; index < elements.length; index++) {
-    console.log(index)
-    console.log(elements[index])
-    element = elements[index]
-    element.classList.remove(className)
+
+  while (elements[0]) {
+    elements[0].classList.remove(className)
   }
 }
 
 function removeElementsByClassName(className) {
   const elements = document.getElementsByClassName(className);
 
-  while(elements[0]) {
+  while (elements[0]) {
     elements[0].parentNode.removeChild(elements[0])
   }
+}
+
+function removeElementById(idName) {
+  document.getElementById(idName).remove()
 }
