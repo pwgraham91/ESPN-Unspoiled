@@ -3,7 +3,11 @@
   "name": "ESPN Unspoiled",
   "version": "1.0",
   "description": "Hide scores and winners on ESPN scoreboard",
-
+  "browser_action": {
+    "default_icon": {
+      "128": "e.png"
+    }
+  },
   "content_scripts": [{
     "js": ["main.js"],
     "matches": ["https://www.espn.com/soccer/scoreboard/*"]
