@@ -5,7 +5,7 @@
   "description": "Hide scores and winners on the ESPN scoreboard",
   "browser_action": {
     "default_icon": {
-      "128": "e.png"
+      "128": "logo.png"
     }
   },
   "content_scripts": [{
