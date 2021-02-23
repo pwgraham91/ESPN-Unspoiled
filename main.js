@@ -10,6 +10,7 @@ function modifyHtml() {
   removeElementsByClassName("sponsored-headlines")
   removeElementById("global-scoreboard")
   removeElementById("now-feed")
+  removeElementById("record")
 }
 
 function removeClass(className) {
